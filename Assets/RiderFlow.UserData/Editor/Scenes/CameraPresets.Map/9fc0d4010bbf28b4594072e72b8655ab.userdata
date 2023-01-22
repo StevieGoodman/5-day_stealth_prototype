@@ -1,0 +1,15 @@
+{
+  "5bd08f1b852374f339065dd82909daee": {
+    "sceneGuid": "9fc0d4010bbf28b4594072e72b8655ab",
+    "uniqueCameraId": "5bd08f1b852374f339065dd82909daee",
+    "name": "Top Down",
+    "pointX": 0.0,
+    "pointY": 0.0,
+    "pointZ": 0.0,
+    "directionX": 0.7071068,
+    "directionY": 0.0,
+    "directionZ": 0.0,
+    "directionW": 0.7071068,
+    "zoom": 10.0
+  }
+}
