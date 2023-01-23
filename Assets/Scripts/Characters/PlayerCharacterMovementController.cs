@@ -18,8 +18,7 @@ namespace StealthPrototype.Characters
         // Fields
         [Header("Class Fields")]
         [SerializeField] private Vector3 movementDirection;
-        [SerializeField] private Vector2 cursorPosition;
-        
+
         private void FixedUpdate()
         {
             IncrementPosition();
@@ -44,10 +43,6 @@ namespace StealthPrototype.Characters
         {
             Vector2 input = context.ReadValue<Vector2>();
             movementDirection = new Vector3(input.x, 0, input.y);
-        }
-        public void OnMouseMove(InputAction.CallbackContext context)
-        {
-            cursorPosition = context.ReadValue<Vector2>();
         }
     }
 }
