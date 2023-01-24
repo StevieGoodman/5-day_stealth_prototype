@@ -3,7 +3,7 @@ namespace StealthPrototype.Characters
     /// <summary>
     /// Provides functionality for character controllers to implement.
     /// </summary>
-    public interface ICharacterController
+    public interface IMovementController
     {
         /// <summary>
         /// Increments the transform's position towards a direction by 1 frame of distance.
