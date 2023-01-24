@@ -1,4 +1,4 @@
-namespace StealthPrototype.Characters {
+namespace StealthPrototype.Characters.Movement {
 
 /// <summary>
 /// Provides functionality for character controllers to implement.

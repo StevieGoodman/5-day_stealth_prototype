@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Threading.Tasks;
 using UnityEngine;
 
-namespace StealthPrototype.Characters {
+namespace StealthPrototype.Characters.Movement {
 
 public class EnemyMovementController : MonoBehaviour, IMovementController {
     

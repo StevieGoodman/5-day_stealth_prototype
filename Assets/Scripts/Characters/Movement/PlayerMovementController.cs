@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-namespace StealthPrototype.Characters {
+namespace StealthPrototype.Characters.Movement {
 
 /// <summary>
 /// Controls the player character's movement.
