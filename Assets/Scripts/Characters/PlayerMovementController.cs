@@ -6,7 +6,7 @@ namespace StealthPrototype.Characters
     /// <summary>
     /// Controls the player character's movement.
     /// </summary>
-    public class PlayerCharacterMovementController : MonoBehaviour, ICharacterController
+    public class PlayerMovementController : MonoBehaviour, IMovementController
     {
         // Asset fields
         [Header("Asset Fields")]
