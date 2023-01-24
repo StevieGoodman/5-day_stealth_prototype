@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa8bde8e9bf24958be86f0191f18c92b, type: 3}
   m_Name: Player Character
   m_EditorClassIdentifier: 
-  maxVelocity: 0
-  impulse: 0
+  moveSpeed: 4
+  rotateSpeed: 10
