@@ -1,6 +1,3 @@
-using System;
-using UnityEngine;
-
 namespace StealthPrototype.Characters
 {
     /// <summary>
@@ -9,14 +6,13 @@ namespace StealthPrototype.Characters
     public interface ICharacterController
     {
         /// <summary>
-        /// Instructs a character to move to a location in world space.
+        /// Increments the transform's position towards a direction by 1 frame of distance.
         /// </summary>
-        /// <param name="transform">Transform to move towards destination</param>
-        /// <param name="destination">Vector2 representing destination of movement</param>
-        /// <param name="speed">Speed of the character</param>
-        public void MoveTo(Transform transform, Vector2 destination, float speed)
-        {
-            throw new NotImplementedException();
-        }
+        public void IncrementPosition();
+        
+        /// <summary>
+        /// Increments the transform's rotation towards a direction by 1 frame of rotation.
+        /// </summary>
+        public void IncrementRotation();
     }
 }

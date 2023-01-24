@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.Serialization;
 
 namespace StealthPrototype.Characters
 {
@@ -8,41 +9,39 @@ namespace StealthPrototype.Characters
     /// </summary>
     public class PlayerCharacterMovementController : MonoBehaviour, ICharacterController
     {
-        // Component cache fields
-        private Camera _camera;
-
         // Asset fields
         [Header("Asset Fields")]
         [SerializeField] private MovementConfig movementConfig;
         
         // Fields
         [Header("Class Fields")]
-        [SerializeField] private Vector3 movementDirection;
+        [SerializeField] private Vector3 moveDirection;
 
         private void FixedUpdate()
         {
             IncrementPosition();
-            AdjustRotation();
+            IncrementRotation();
         }
 
-        private void IncrementPosition()
+        public void IncrementPosition()
         {
-            transform.position += movementDirection * (movementConfig.speed * Time.deltaTime);
+            transform.position += moveDirection * (movementConfig.moveSpeed * Time.deltaTime);
         }
-        private void AdjustRotation()
+        
+        public void IncrementRotation()
         {
-            if (movementDirection == Vector3.zero) return; 
+            if (moveDirection == Vector3.zero) return; 
             transform.rotation = Quaternion.RotateTowards(
                 transform.rotation,
-                Quaternion.LookRotation(movementDirection), 
-                360f/60f
+                Quaternion.LookRotation(moveDirection), 
+                movementConfig.rotateSpeed
             );
         }
         
         public void OnMovementInput(InputAction.CallbackContext context)
         {
             Vector2 input = context.ReadValue<Vector2>();
-            movementDirection = new Vector3(input.x, 0, input.y);
+            moveDirection = new Vector3(input.x, 0, input.y);
         }
     }
 }
