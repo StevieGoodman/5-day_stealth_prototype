@@ -1,18 +1,20 @@
-namespace StealthPrototype.Characters
-{
+namespace StealthPrototype.Characters {
+
+/// <summary>
+/// Provides functionality for character controllers to implement.
+/// </summary>
+public interface IMovementController {
+
     /// <summary>
-    /// Provides functionality for character controllers to implement.
+    /// Increments the transform's position towards a direction by 1 frame of distance.
     /// </summary>
-    public interface IMovementController
-    {
-        /// <summary>
-        /// Increments the transform's position towards a direction by 1 frame of distance.
-        /// </summary>
-        public void IncrementPosition();
-        
-        /// <summary>
-        /// Increments the transform's rotation towards a direction by 1 frame of rotation.
-        /// </summary>
-        public void IncrementRotation();
-    }
+    public void increment_position();
+
+    /// <summary>
+    /// Increments the transform's rotation towards a direction by 1 frame of rotation.
+    /// </summary>
+    public void increment_rotation();
+
+}
+
 }
