@@ -533,6 +533,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2206475438443275176, guid: 65ba5795165184c9f84949c8ffdb90ba, type: 3}
+      propertyPath: movement_config
+      value: 
+      objectReference: {fileID: 11400000, guid: 27ba2ea157ee649f196d1c01e293c160, type: 2}
     - target: {fileID: 2206475438443275178, guid: 65ba5795165184c9f84949c8ffdb90ba, type: 3}
       propertyPath: m_RootOrder
       value: 3
@@ -599,7 +603,15 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 134827585}
     - target: {fileID: 6477382461554946402, guid: 674a42cdee0f542e4b598593ca9d9685, type: 3}
+      propertyPath: movement_config
+      value: 
+      objectReference: {fileID: 11400000, guid: 25530fbe3f51b4444a5fd84edc1b2edf, type: 2}
+    - target: {fileID: 6477382461554946402, guid: 674a42cdee0f542e4b598593ca9d9685, type: 3}
       propertyPath: patrolNodesParent
+      value: 
+      objectReference: {fileID: 1757199889}
+    - target: {fileID: 6477382461554946402, guid: 674a42cdee0f542e4b598593ca9d9685, type: 3}
+      propertyPath: patrol_nodes_parent
       value: 
       objectReference: {fileID: 1757199889}
     - target: {fileID: 8043241300793361808, guid: 674a42cdee0f542e4b598593ca9d9685, type: 3}
